@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary-clr-500: hsla(229, 98%, 66%, 1);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-center {
+  place-items: center;
+}
+
+.section-hero {
+  position: relative;
+  height: 820px;
+
+  & h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+
+  & p {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 6.82px;
+    text-transform: capitalize;
+  }
+
+  & input {
+    font-size: 14px;
+
+    border: none;
+    padding: 10px 60px 10px 20px;
+    width: 100%;
+    height: 63px;
+
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  & button {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-50%);
+
+    color: white;
+    background-color: var(--primary-clr-500);
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+
+    width: 150px;
+    height: 60px;
+  }
+
+  & img {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.section-hero__wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100%;
+}
+
+.section-hero__cta {
+  text-align: center;
+}
+
+.section-hero__search {
+  position: relative;
+  width: 653px;
+  margin: 0 auto;
+}
+
+.section-hero__more {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--primary-clr-500);
+  padding: 1rem;
+
+  & ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+.section-wcu {
+  background: url(../images/image\ 2.png);
+
+  width: 100%;
+  height: 100%;
+  max-height: 685px;
+
+  padding: 8rem;
+}
+
+.section-wcu__cto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  & h2 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Aleo", sans-serif;
+
+    text-transform: capitalize;
+  }
+
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
